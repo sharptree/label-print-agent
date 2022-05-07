@@ -1,0 +1,10 @@
+build
+.gradle
+.idea
+libs/*.jar
+/label-print-agent.yaml
+/.password.key
+/resources/windows/*.jar
+/logback.xml
+/resources/linux/label-print-agent.jar
+/resources/linux/logs/

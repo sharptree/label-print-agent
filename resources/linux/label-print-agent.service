@@ -1,0 +1,12 @@
+[Unit]
+Description=Label Print Agent
+
+[Service]
+Type=oneshot
+ExecStart=/opt/label-print-agent-linux/label-print-agent-cli.sh start
+ExecStop=/opt/label-print-agent-linux/label-print-agent-cli.sh stop
+User=label-print-agent
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

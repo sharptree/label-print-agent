@@ -1,0 +1,34 @@
+maximo:
+  # The Maximo username
+  username: "maximo_user"
+  # THe Maximo user password
+  password: "maximo_password"
+  # The hostname only, without http or https
+  host: "maximo.acme.com"
+  # The port for Maximo,defaults to 80 for http, 443 for https
+  port: 443
+  # Should SSL (https) be used
+  secure: true
+  # The Maximo ApiKey for access.
+  # The label-print-agent-cli.bat has options for creating an ApiKey
+  # Details on how to generate a key can be found here:
+  # https://www.ibm.com/support/pages/creating-and-using-rest-api-keys-secure-application-server-environment
+  # apikey = "your_api_key"
+
+  # Flag that indicates if SSL certificate validation will be ignored, defaults to false
+  # allowInsecure: true / false
+
+  # The Server Side Event end point. This will be appended to the resolved Maximo URL (https://maximo.acme.com/maximo/labeldispatch), defaults to labeldispatch
+  # sseEndPoint: "labeldispatch"
+
+  # The Maximo application context, for example the ending maximo part of https://maximo.acme.com/maximo, defaults to maximo
+  # context: "maximo"
+
+  # The type of authentication to use when accessing Maximo, maxauth, form, basic or oidc, defaults to maxauth and will also attempt to auto-negotiate
+  # authType: "maxauth"
+
+# Optional section that limits the print agent to only handling requests for the listed printers
+# If this is not specified all remote printers will be handled by the print agent.
+# printers:
+#  - printer1
+#  - printer2
